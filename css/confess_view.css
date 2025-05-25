@@ -1,0 +1,292 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f6f8fa;
+  color: #333;
+  overflow-x: hidden;
+}
+
+nav {
+  padding: 15px;
+}
+
+nav img {
+  height: 45px;
+  cursor: pointer;
+}
+
+.container-con {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 0 20px 60px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+/* Confession Box */
+.confession-box {
+  background: #fff;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 25px 30px;
+  box-sizing: border-box;
+}
+
+.confession-box h2 {
+  margin: 0 0 10px;
+  font-size: 25px;
+  color: #222;
+}
+
+.confession-box small {
+  display: block;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  font-size: 17px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Comments Section */
+.comments {
+  background: #fff;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 25px 20px;
+  box-sizing: border-box;
+}
+
+.comments h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #222;
+}
+
+.comment {
+  background: #f1f1f1;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.comment strong {
+  color: #005cc5;
+}
+
+/* Comment Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background: #005cc5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  background: #004bb1;
+}
+
+.read-more-btn {
+  background: none;
+  color: #007bff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 5px;
+  padding: 0;
+}
+
+.read-more-btn:hover {
+  text-decoration: underline;
+}
+
+.like-section,
+.view-section {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+
+#like-btn {
+  border: none;
+  background-color: #fff;
+  padding: 1px;
+  margin: 2px;
+
+
+
+  cursor: pointer;
+  color: #ffffff;
+}
+
+#like-btn img {
+  width: 40px;
+  height: 40px;
+
+
+}
+
+
+.confession-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.reaction {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: #e60000;
+  transform: scale(1.05);
+}
+
+.delete-btn:active {
+  transform: scale(0.98);
+}
+
+.share-box{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    
+  }
+
+center a {
+    color: blue;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container-con {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px 40px;
+    margin-top: 80px;
+  }
+
+  .confession-box,
+  .comments {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  nav {
+    padding: 10px;
+  }
+
+  nav img {
+    height: 24px;
+    width: auto;
+  }
+  .share-box{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    
+  }
+}
+
+@media (max-width: 480px) {
+
+  .confession-box,
+  .comments {
+    padding: 15px;
+  }
+
+  .confession-box h2 {
+    font-size: 20px;
+  }
+
+  .paragraph {
+    font-size: 15px;
+  }
+
+  .comments h3 {
+    font-size: 18px;
+  }
+
+  .comment {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  input[type="submit"] {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .read-more-btn {
+    font-size: 13px;
+  }
+  
+}

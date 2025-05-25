@@ -1,0 +1,158 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--bs-font-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji');
+}
+
+body {
+  background-color: #eceaf7;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  /* background-color: #242156; */
+  background-image: linear-gradient(to right, #3f2b96, #161161);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  font-size: 23px;
+  z-index: 1000;
+}
+
+/* Sidebar Desktop */
+.sidebar {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  height: calc(100vh - 80px);
+  width: 80px;
+  /* background-color: #242156; */
+background-image: linear-gradient(to bottom, #3f2b96, #161161);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  z-index: 999;
+  transition: width 0.3s;
+}
+
+/* Sidebar Options */
+.sidebar .opt {
+  color: #fff;
+  width: 80%;
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s, border-radius 0.3s;
+}
+
+.sidebar .opt:hover {
+  background-color: #9371c2;
+}
+
+.btm-icn {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 5px;
+  filter: brightness(0) invert(1);
+}
+
+.sidebar .btn_clicked {
+  background-color: #9371c2;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Alert Boxes */
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.alert-success:hover {
+  background-color: #c1e2b3;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+  /* Sidebar becomes Bottom Bar */
+  .sidebar {
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    top: unset;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    justify-content: space-around;
+    background-color: #242156;
+  }
+
+  .sidebar .opt {
+    margin: 0;
+    padding: 5px;
+    margin: 0 8px;
+    font-size: 0.7rem;
+  }
+
+  .sidebar .opt p {
+    font-size: 0.6rem;
+  }
+
+  .btm-icn {
+    margin-bottom: 2px;
+  }
+
+
+  body {
+    padding-bottom: 60px;
+    /* Height of bottom nav */
+  }
+
+  a {
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
+    /* Removes mobile blue highlight */
+  }
+
+  a:focus,
+  a:active {
+    outline: none;
+    box-shadow: none;
+  }
+
+}

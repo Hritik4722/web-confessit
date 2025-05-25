@@ -1,0 +1,195 @@
+/* Confession Home Container */
+body{
+  background-color: #f6f8fa;
+  font-family: 'Poppins', sans-serif;
+}
+
+.confession_home {
+  margin-top: 80px;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f6f8fa;
+}
+
+nav img {
+  height: 45px;
+  cursor: pointer;
+}
+
+/* Confession Box */
+.confession_d {
+  width: 90%;
+  max-width: 700px;
+  background-color: #fff;
+  border: 1px solid #cecece;
+  border-radius: 8px;
+  padding: 15px 15px 10px 15px;
+  margin: 10px 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Profile Info */
+.prf_img {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.prf_d1 {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.prf_d1 img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.header_con {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.header_con2 {
+  display: flex;
+  
+  flex-direction: column;
+}
+.header_con2 p {
+  margin: 0;
+  font-weight: 600;
+  color: #000;
+  font-size: 1.1rem;
+}
+
+.header_con p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.header_con span {
+  font-size: 0.75rem;
+  color: #747474;
+}
+
+.header_con3 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.time {
+  padding-left: 3px;
+}
+
+/* Confession Message */
+.con_mes {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.con_mes p2 {
+  font-size: 0.95rem;
+}
+
+/* Read More Link */
+.confess-link {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Reactions Section */
+.reaction {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Active Sidebar Button */
+#home {
+  color: #fff;
+}
+
+.btn_clicked {
+  background-color: #9371c2;
+  padding: 0 15px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.like-btn.liked {
+  color: red;
+  cursor: not-allowed;
+  /* Optional: To prevent clicking again immediately */
+}
+
+a {
+  text-decoration: none;
+
+}
+
+#load-more-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 20px auto;
+  display: block;
+}
+
+#load-more-btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .confession_d {
+    width: 95%;
+    padding: 10px;
+  }
+
+
+
+  .header_con3 {
+    justify-content: flex-start;
+  }
+
+  .con_mes {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+
+  .prf_d1 {
+    margin-bottom: 8px;
+  }
+
+  .header_con2 p {
+    font-size: 0.95rem;
+  }
+
+  .header_con span {
+    font-size: 0.7rem;
+  }
+
+  .con_mes {
+    font-size: 0.85rem;
+  }
+}

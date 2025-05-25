@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f4f2fa;
+  color: #333;
+}
+
+/* NAV logo */
+nav img {
+  height: 40px;
+}
+
+/* Confess form container */
+.confess-container {
+  margin: 100px 20px 0 100px;
+}
+
+@media (max-width: 768px) {
+  .confess-container {
+    margin: 100px 16px 100px 16px; 
+  }
+}
+
+textarea {
+  width: 100%;
+  height: 40vh;
+  resize: none;
+  overflow-y: auto;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;  
+  outline: none;
+  border: none;
+  padding: 20px;
+  font-size: 16px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 20px 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+textarea:focus {
+  box-shadow: 0 0 0 3px #e0d4fa;
+}
+
+/* Type and visibility section */
+.type_post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  margin: 0 0 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+}
+
+.type_post select {
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f9f7ff;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.type_post select:focus {
+  border-color: #9371c2;
+}
+
+/* Character counter */
+#charCount {
+  font-size: 12px;
+  font-weight: 500;
+  margin: auto;
+  color: #d40000;
+  flex: 1;
+  text-align: center;
+}
+
+/* Submit button */
+.button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px; /* Leave room for bottom nav */
+}
+
+.btn2 {
+  background: linear-gradient(135deg, #9371c2, #6f43ad);
+  color: #fff;
+  width: 200px;
+  font-size: 18px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 15px rgba(147, 113, 194, 0.3);
+}
+
+.btn2:hover {
+  background: linear-gradient(135deg, #6f43ad, #4a22df);
+}
+
